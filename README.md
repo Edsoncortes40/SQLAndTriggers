@@ -112,8 +112,7 @@ Create your file by using a Peewee distribution tool called `pwiz`, which uses d
 ```
 The password is `vagrant`. This will create the scaffolding of your ORM program in `orm.py`.
 
-To test this code:
-- replace the database initialization with:
+Test this code by replacing the database initialization with:
 ```
     database = PostgresqlDatabase('flightsskewed', **{'host': 'localhost', 'user': 'vagrant', 'password': 'vagrant'})
 ```
