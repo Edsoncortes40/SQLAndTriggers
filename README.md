@@ -145,7 +145,7 @@ database) in `runORM`, but do so entirely through the **Peewee** ORM interface.
 
 
 
-## Notes:
+## Notes
 - You must add `.save(force_insert=True)` for new tuples or they will not be committed to the
   database.
 - `python3 SQLTesting.py` is once again your last step. Run this and it will call both
@@ -154,6 +154,10 @@ database) in `runORM`, but do so entirely through the **Peewee** ORM interface.
 - You might or might not need to eliminate blank lines before "    class Meta:" lines in
    order to avoid syntax errors, i.e. get rid of any blank lines
    within class definitions (or ensure that proper indentation is maintained by adding spaces).
+
+## Bonus Points
+Add code in `runORM` to update `NumberOfFlightsTaken` as in assign4, which has
+already been defined (but not populated). Worth 5 points on the first midterm.
 
 ## Submit Instructions
 Submit `psy.py` and  `orm.py` files by compressing (zip, on a mac
