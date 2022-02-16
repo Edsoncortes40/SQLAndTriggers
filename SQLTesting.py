@@ -58,6 +58,7 @@ try:
 
     print("========== Executing PSY")
     runPsy(conn, cur, "example.json")
+    cur.execute("DELETE FROM numberofflightstaken;")
     conn.commit()
     runQueries()
 
