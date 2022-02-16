@@ -156,8 +156,8 @@ database) in `runORM`, but do so entirely through the **Peewee** ORM interface.
    within class definitions (or ensure that proper indentation is maintained by adding spaces).
 
 ## Bonus Points
-Add code at the bottom of `runORM` to update `NumberOfFlightsTaken` (already
-created in `large-skewed.sql`) as in assign4. Worth 5 points on the first midterm.
+Add code in `runORM` to update `NumberOfFlightsTaken` as in assign4, which has
+already been defined (but not populated). Worth 5 points on the first midterm.
 
 ## Submit Instructions
 Submit `psy.py` and  `orm.py` files by compressing (zip, on a mac
