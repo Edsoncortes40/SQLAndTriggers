@@ -35,6 +35,11 @@ cur.execute("SELECT * FROM flewon WHERE flightid='DL108' AND flightdate='2015-09
 ans = cur.fetchall()
 pout(ans)
 
+cur.execute("SELECT COUNT(*) FROM numberofflightstaken;")
+ans = cur.fetchall()
+pout(ans)
+
+
 cur.close()
 conn.close()
 

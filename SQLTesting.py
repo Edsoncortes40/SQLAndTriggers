@@ -68,6 +68,10 @@ try:
     runORM("example.json")
     runQueries()
 	
+    cur.execute("SELECT COUNT(*) FROM numberofflightstaken;")
+    ans = cur.fetchall()
+    pout(ans)
+
 except:
     print(sys.exc_info())
     raise
