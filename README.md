@@ -157,7 +157,8 @@ database) in `runORM`, but do so entirely through the **Peewee** ORM interface.
 
 ## Bonus Points
 Add code in `runORM` to update `NumberOfFlightsTaken` as in assign4, which has
-already been defined (but not populated). Worth 5 points on the first midterm.
+already been defined (but not populated). Worth 5 points on the first midterm
+if correct.
 
 ## Submit Instructions
 Submit `psy.py` and  `orm.py` files by compressing (zip, on a mac
