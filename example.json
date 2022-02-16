@@ -1,0 +1,2 @@
+{ "flewon": { "flightid": "DL108", "flightdate": "2015-09-25", "customers": [ {"customerid": "cust33"}, {"customerid": "cust1001", "name": "XYZ", "birthdate": "1991-12-06", "frequentflieron": "AA"}, {"customerid": "cust25"} ] } }
+{ "newcustomer": { "customerid": "cust1000", "name": "XYZ", "birthdate": "1991-12-06", "frequentflieron": "Spirit Airlines" } }
