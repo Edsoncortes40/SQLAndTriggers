@@ -138,10 +138,10 @@ Run by typing `python3 testORM.py` from the shell. You should have a record adde
 names. Verify that `bob` and `PET` were added using `psql`.
 
 ## Task: Replicate the work in `psy.py`.
-
-Implement the same changes to 
+Remove all the lines of `runORM()`. Replace them with code to 
+implement the same changes to 
 the database as in `psy.py` (read JSON strings, insert corresponding tuples into the
-database) in `runORM`, but do so entirely through the **Peewee** ORM interface.
+database), but do so entirely through the **Peewee** ORM interface.
 
 
 

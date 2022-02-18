@@ -42,8 +42,8 @@ def runQueries():
 
 def delQueries():
     cur.execute("DELETE FROM flewon WHERE flightid='DL108' AND flightdate='2015-09-25'")
-    cur.execute("DELETE FROM customers WHERE (customerid='cust1000')")
-    cur.execute("DELETE FROM customers WHERE (customerid='cust1001')")
+    cur.execute("DELETE FROM flewon WHERE customerid >= 'cust1000' AND LENGTH(customerid) = 8")
+    cur.execute("DELETE FROM customers WHERE customerid >= 'cust1000' AND LENGTH(customerid) = 8")
     conn.commit()
 
 
@@ -58,7 +58,6 @@ try:
 
     print("========== Executing PSY")
     runPsy(conn, cur, "example.json")
-    cur.execute("DELETE FROM numberofflightstaken;")
     conn.commit()
     runQueries()
 
@@ -68,10 +67,6 @@ try:
     runORM("example.json")
     runQueries()
 	
-    cur.execute("SELECT COUNT(*) FROM numberofflightstaken;")
-    ans = cur.fetchall()
-    pout(ans)
-
 except:
     print(sys.exc_info())
     raise
